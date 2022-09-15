@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-image: url("background.jpg");
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.site-header {
+  padding: 3rem 2rem;
+  font-size: 5rem;
+  font-family: BetterGrade;
+  text-align: center;
+}
+
+.wrapper {
+  width: 800px;
+  height: 400vh;
+  margin: 0 auto;
+  background-color: #005d82dd;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: thistle;
+}
+
+.image {
+  width: 50%;
+  padding: 2rem;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  font-size: 2.25rem;
+  font-family: BetterGrade;
+  padding: 2rem;
+  width: 50%;
+}
+
+.cast-title {
+  font-size: 4rem;
+  font-family: BetterGrade;
+  width: 100%;
+  text-align: center;
+}
+
+.cast {
+  padding: 1rem;
+  width: 33.33%;
+}
+
+.sidebar {
+  background-color: #005d82dd;
+  position: fixed;
+  left: 0%;
+  top: 25%;
+  padding: 0.5rem;
+  height: 50vh;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+}
+
+.sidebar-nav a {
+  display: block;
+  margin: 1rem;
+  padding: 1rem 1rem;
+  color: white;
+  font-family: BetterGrade;
+}
+
+.footer {
+  background-color: yellow;
+  padding: 3rem 2rem;
+}
+
+@media screen and (max-width: 800px) {
+  .cast {
+    width: 100%;
+  }
+  .image {
+    width: 100%;
+  }
+  .info {
+    width: 100%;
+  }
+}
