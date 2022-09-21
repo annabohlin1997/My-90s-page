@@ -39,12 +39,12 @@ img {
   background-color: thistle;
 }
 
-.image {
+.title-image {
   width: 50%;
   padding: 2rem;
 }
 
-.info {
+.film-summary {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -95,7 +95,7 @@ li:hover a {
   color: black;
 }
 
-#guess {
+#oscars-guess {
   font-family: 'Courier New', Courier, monospace;
   font-size: 1rem;
   padding: 2rem;
@@ -103,7 +103,7 @@ li:hover a {
   width: 100%;
 }
 
-#button {
+#answer-button {
   font-family: 'Courier New', Courier, monospace;
   font-size: 1rem;
   padding: 0.3333rem;
