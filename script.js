@@ -1,5 +1,5 @@
 function changeText() {
-    let myElement = document.createElement('h2');
+    let myElement = document.createElement('p');
     myElement.innerHTML = 'The answer is 3! Did you get it right?';
 
     document.getElementById('oscars-guess').appendChild(myElement);
