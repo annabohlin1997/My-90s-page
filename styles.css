@@ -1,7 +1,6 @@
 *,body {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -15,15 +14,14 @@ img {
 }
 
 .site-header {
-  padding: 3rem 2rem;
-  font-size: 6rem;
+  padding: 1rem 2rem;
+  font-size: 5rem;
   font-family: BetterGrade;
   font-weight: normal;
   text-align: center;
 }
 
 .wrapper {
-  max-width: 800px;
   height: auto;
   margin: 0 auto;
   background-color: #005d82dd;
@@ -38,19 +36,22 @@ img {
 }
 
 .title-image {
-  width: 50%;
+  width: 98%;
   padding: 2rem;
 }
 
 .film-summary {
+  width: 98%;
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
   font-size: 1rem;
   font-family: 'Courier New', Courier, monospace;
-  padding: 2rem;
-  width: 50%;
+  padding-top: 0rem;
+  padding-bottom: 2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
 .sub-heading {
@@ -62,8 +63,11 @@ img {
 }
 
 .cast {
-  padding: 1rem;
-  width: 33.33%;
+  width: 98%;
+  padding-top: 2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
@@ -71,23 +75,27 @@ img {
 
 .sidebar {
   background-color: #005d82dd;
-  position: fixed;
-  left: 0%;
-  top: 25%;
-  padding: 0.5rem;
-  height: 50vh;
-  min-height: 100px;
-  max-height: 400px;
+  position: relative;
+  height: 4rem;
+  width: 100%;
+  padding: 0,5rem;
+  margin: 0rem;
 }
 
 .sidebar-nav ul {
-  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding: 0rem;
+  margin: 0rem;
 }
 
 .sidebar-nav a {
-  display: block;
-  margin: 1rem;
-  padding: 1rem 1rem;
+  display: flex;
+  font-size: 0.75rem;
+  margin: 0.333rem;
+  padding: 1.25rem 0rem;
   color: white;
   font-family:'Courier New', Courier, monospace;
 }
@@ -108,9 +116,9 @@ li:hover a {
   font-family: 'Courier New', Courier, monospace;
   font-size: 1rem;
   padding: 0.3333rem;
-  text-align: center;
-  width: 15%;
-  margin: 2rem;
+  width: 25%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .score {
@@ -119,7 +127,13 @@ li:hover a {
   display: flex;
   font-family: 'Courier New', Courier, monospace;
   font-size: 1rem;
-  padding: 2rem;
+  padding: 1rem;
+  margin-top: 0rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  flex-direction: column;
+  text-align:start;
+  gap: 2rem;
 }
 
 .footer {
@@ -128,19 +142,20 @@ li:hover a {
   font-family: 'Courier New', Courier, monospace;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 800px) {
   .cast {
-    width: 98%;
-    padding-top: 2rem;
-    padding-right: 10rem;
-    padding-left: 10rem;
-    padding-bottom: 2rem;
+    padding: 1rem;
+    width: 29%;  
   }
+
   .title-image {
-    width: 98%;
+    width: 50%;
+    padding: 1rem;
   }
+
   .film-summary {
-    width: 98%;
+    width: 40%;
+    padding: 1rem;
   }
 
   .container {
@@ -148,28 +163,26 @@ li:hover a {
   }
 
   #answer-button {
-    width: 25%;
-  }
-
-  .score {
-    flex-direction: column;
-    gap: 2rem;
+    width: 15%;
   }
 
   .sidebar {
     position: relative;
-    height: 1rem;
+    height: 4rem;
     width: 100%;
     padding: 0rem;
     margin: 0rem;
   }
 
   .sidebar-nav ul {
-    display: flex;
+    list-style: none;
+  }
+
+  .score {
     flex-direction: row;
-    justify-content: space-around;
-    list-style-type: none;
-    padding: 0rem;
-    margin: 0rem;
+  }
+
+  .wrapper {
+    max-width: 800px;
   }
 }
