@@ -1,11 +1,7 @@
-* {
+*,body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-html {
-  font-size: 16px;
 }
 
 body {
@@ -20,13 +16,14 @@ img {
 
 .site-header {
   padding: 3rem 2rem;
-  font-size: 5rem;
+  font-size: 3rem;
   font-family: BetterGrade;
+  font-weight: bold;
   text-align: center;
 }
 
 .wrapper {
-  width: 800px;
+  max-width: 800px;
   height: auto;
   margin: 0 auto;
   background-color: #005d82dd;
@@ -56,7 +53,7 @@ img {
   width: 50%;
 }
 
-.cast-title {
+.sub-heading {
   font-size: 4rem;
   font-family: BetterGrade;
   width: 100%;
@@ -133,6 +130,10 @@ li:hover a {
 @media screen and (max-width: 800px) {
   .cast {
     width: 98%;
+    padding-top: 2rem;
+    padding-right: 10rem;
+    padding-left: 10rem;
+    padding-bottom: 2rem;
   }
   .title-image {
     width: 98%;
@@ -142,10 +143,6 @@ li:hover a {
   }
 
   .container {
-    padding-top: 5rem;
-    padding-left: 10rem;
-    padding-bottom: 2rem;
-    padding-right: 10rem;
     width: 100%;
   }
 
@@ -154,6 +151,24 @@ li:hover a {
   }
 
   .score {
-    flex-direction: column-reverse;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .sidebar {
+    position: relative;
+    height: 1rem;
+    width: 100%;
+    padding: 0rem;
+    margin: 0rem;
+  }
+
+  .sidebar-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0rem;
+    margin: 0rem;
   }
 }
